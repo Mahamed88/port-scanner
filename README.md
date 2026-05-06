@@ -13,14 +13,13 @@ A fast multithreaded TCP connect port scanner written in C++ from scratch. Built
 - Clean colored terminal output — open ports in green, closed in red, filtered in yellow
 
 ## Demo
-$ ./scanner 192.168.12.68 --top-ports 20 -v
-Scanning 192.168.12.68
-PORT            STATE           SERVICE         BANNER
-22/tcp          OPEN            ssh             SSH-2.0-OpenSSH_9.9
-80/tcp          CLOSED          http
-443/tcp         FILTERED        https
-Open: 1  Closed: 18  Filtered: 1
-Duration: 0.011s
+**Verbose scan — banner grabbing on open ports:**
+
+![Verbose scan](Demo-screenshots/demo3.png)
+
+**Basic scan — filtered ports with service detection:**
+
+![Basic scan](Demo-screenshots/demo1.png)
 
 ## Installation
 
